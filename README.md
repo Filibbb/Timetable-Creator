@@ -1,4 +1,4 @@
-# team01-napp-projekt2-timetable-creator
+# Timetable Creator
 
 ## Beschreibung
 Dieses Repository enthält den Code für das Projekt 2 "Stundenplan-Ersteller". 
