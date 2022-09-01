@@ -1,0 +1,19 @@
+.combo-box {
+    -fx-border-color: #CCDFFF;
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-border-radius: 8px;
+    -fx-padding: 0,0,0,0;
+
+    -fx-font-size: 20;
+
+    -fx-background-color: white;
+    -fx-background-image: url(images/coice_box_arrow.png);
+    -fx-background-size: 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+}
+
+.arrow{
+    visibility: hidden;
+}

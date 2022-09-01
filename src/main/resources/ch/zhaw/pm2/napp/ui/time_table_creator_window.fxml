@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.zhaw.pm2.napp.ui.TimeTableCreatorController">
+    <left>
+        <VBox maxHeight="992.0" maxWidth="720.0" minHeight="0.0" minWidth="0.0" prefHeight="992.0" prefWidth="371.0"
+              spacing="20.0" BorderPane.alignment="CENTER_LEFT">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Load resources" textAlignment="CENTER"
+                  wrappingWidth="357.13671875">
+                <VBox.margin>
+                    <Insets left="10.0"/>
+                </VBox.margin>
+                <font>
+                    <Font size="30.0"/>
+                </font>
+            </Text>
+            <VBox maxWidth="370.0" minHeight="202.0" minWidth="370.0" prefHeight="202.0" prefWidth="370.0" spacing="20.0" VBox.vgrow="NEVER">
+                <fx:include fx:id="buildingSelector" source="components/file-loader/file_loader_component.fxml" />
+                <fx:include fx:id="peopleSelector" source="components/file-loader/file_loader_component.fxml" />
+                <fx:include fx:id="schoolClasses" source="components/file-loader/file_loader_component.fxml" />
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#generateTimeTable" prefHeight="25.0" prefWidth="404.0" styleClass="primary" text="Create Timetable" />
+            <Button fx:id="exportTimeTableBtn" mnemonicParsing="false" onAction="#exportTimeTable" prefHeight="46.0"
+                    prefWidth="376.0" styleClass="primary" text="Export Timetable"/>
+            <BorderPane.margin>
+                <Insets left="5.0" right="5.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <stylesheets>
+        <URL value="@styles/application_theme.css" />
+    </stylesheets>
+    <styleClass>
+        <String fx:value="root" />
+        <String fx:value="text-field" />
+    </styleClass>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="nested-container" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="135.0" prefWidth="1552.0">
+                    <children>
+                        <Text layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Select your Timetable" textAlignment="CENTER" wrappingWidth="1551.13671875">
+                            <font>
+                                <Font size="30.0" />
+                            </font>
+                        </Text>
+                  <AnchorPane layoutX="25.0" layoutY="135.0" prefHeight="55.0" prefWidth="1500.0">
+
+                      <fx:include fx:id="personDropDown" layoutX="615"
+                                  source="components/dropdown/dropdown_component.fxml"/>
+                      <fx:include fx:id="classesDropDown" layoutX="1230" source="components/dropdown/dropdown_component.fxml" />
+                  </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane>
+                    <fx:include source="components/tableview/tableview_component.fxml" fx:id="timetableView"/>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="25.0" right="25.0" top="20.0" />
+               </VBox.margin>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </center>
+    <top>
+        <AnchorPane prefHeight="88.0" prefWidth="1933.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="5.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Timetable Creator" wrappingWidth="1923.0" />
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

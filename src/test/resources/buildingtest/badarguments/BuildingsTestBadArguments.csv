@@ -1,0 +1,5 @@
+Hauptgebaeude;1;Gruppenraum 100;20
+Hauptgebaeude;2;Grosser Hoersaal;Test in Line 2
+Hauptgebaeude;3;Gruppenraum 333; already failed - no exception expected
+Nebengebaeude1;1;Schulzimmer 121;20
+Nebengebaeude2;1;Pausenraum;50

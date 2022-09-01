@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+
+
+<ComboBox fx:id="dropdown" maxHeight="60.0" maxWidth="270.0" minHeight="60.0" minWidth="270.0" prefHeight="60.0"
+          prefWidth="270.0"
+          promptText="Filter" styleClass="combo-box" stylesheets="@dropdown_component.css"
+          xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="ch.zhaw.pm2.napp.ui.dropdown.FilterComponentController"
+          onAction="#applyFilter"
+/>

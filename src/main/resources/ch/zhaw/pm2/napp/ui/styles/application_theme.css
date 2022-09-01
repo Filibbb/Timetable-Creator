@@ -1,0 +1,34 @@
+.root {
+    -fx-background-color: rgb(215, 241, 255);
+}
+
+.root .nested-container {
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+.title {
+    -fx-fill: #0061FF;
+    -fx-font-size: 30px;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-background-color: #F2F7FF;
+    -fx-border-color: #0061FF;
+    -fx-border-radius: 4px;
+    -fx-font-size: 20px;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0061FF;
+}
+
+.primary {
+    -fx-background-color: #0061FF;
+    -fx-border-color: #0061FF;
+    -fx-border-radius: 4px;
+    -fx-font-size: 20px;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F2F7FF;
+}

@@ -1,0 +1,5 @@
+Hauptgebaeude;1;Gruppenraum 100;20
+Hauptgebaeude;2;Grosser Hoersaal;250
+Test Line3; Should fail
+Test Line4; already failed - no exception expected
+Nebengebaeude2;1;Pausenraum;50
